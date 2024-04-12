@@ -56,7 +56,7 @@ $ cargo install ore-cli
 $ solana-keygen new
 
 - save the Recovery phrase and password
-- goto your keypair folder it told you "C:\Users\"keypair location"\.config\solana\id.json"
+- goto your keypair folder it told you "C:\Users\ "keypair location"\.config\solana\id.json"
 - open and copy the id.json
 
 
@@ -79,15 +79,15 @@ $ Solana address
 
 - create a text file and enter this
 
-@echo off
-
-:loop
-
-echo start mining ore...
-
-ore --rpc "your free or paid RPC" --keypair C:\Users\"keypair location"\.config\solana\id.json --priority-fee 8000000 mine --threads " your PC thread count"
-
-goto loop
+  @echo off
+  
+  :loop
+  
+  echo start mining ore...
+  
+  ore --rpc "your free or paid RPC" --keypair C:\Users\ "keypair location"\.config\solana\id.json --priority-fee 8000000 mine --threads " your PC thread count"
+  
+  goto loop
 
 - change the keypair location to your that you saved from step 5
 - click save as
@@ -99,16 +99,20 @@ goto loop
 #Helpful Commands---------------------------------------------------------------------------------------------------------------
 
 Check ORE Rewards"unclaimed":  
-$ ore rewards
+$ ore --keypair C:\Users\ "keypair location"\.config\solana\id.json rewards
 
 Check ORE Balance"claimed":  
-$ ore balance
+$ ore --keypair C:\Users\ "keypair location"\.config\solana\id.json balance
 
 Claim ORE Rewards:  
-$ ore --rpc "your free or paid RPC" --keypair C:\Users\"keypair location"\.config\solana\id.json --priority-fee 7000000 claim
+- you can run this a a batch but watch closly for a claim so you can stop the batch  
+$ ore --rpc "your free or paid RPC" --keypair C:\Users\ "keypair location"\.config\solana\id.json --priority-fee 7000000 claim
 
 Check SOL Balance:   
 $ solana balance
 
 Check SOL Address:  
-$ Solana address
+$ solana address
+
+Import A SOL Seed Phrase:  
+$ solana-keygen recover
