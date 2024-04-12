@@ -27,11 +27,11 @@ Ore Website: https://ore.supply/
 
 - goto the RustUp webiste and download
 - click/run the exe as admin
-- went promt enter 1 and press Enter
+- when promt select 1 and press Enter
 - exit terminal when done
 
 
-2. Isntall Solana CLI ---------------------------------------------------------------------------------------------------------------
+2. Install Solana CLI ---------------------------------------------------------------------------------------------------------------
  
 - open admin terminal
 - goto the Solana Docs page in the links
