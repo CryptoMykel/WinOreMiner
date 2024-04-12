@@ -23,56 +23,60 @@ Ore Website: https://ore.supply/
 
 #Start Building
 
-1. Install RustUp
--goto the RustUp webiste and download
--click/run the exe as admin
+1. Install RustUp -------------------------------------------------------------------------------------------------------------------
+
+- goto the RustUp webiste and download
+- click/run the exe as admin
 - went promt enter 1 and press Enter
 - exit terminal when done
 
 
-2. Isntall Solana CLI
+2. Isntall Solana CLI ---------------------------------------------------------------------------------------------------------------
+ 
 - open admin terminal
 - goto the Solana Docs page in the links
-- enter these in admin terminal
-
+- enter these in admin terminal  
 $ cmd /c "curl https://release.solana.com/v1.18.4/solana-install-init-x86_64-pc-windows-msvc.exe --output C:\solana-install-tmp\solana-install-init.exe --create-dirs"  
-$ C:\solana-install-tmp\solana-install-init.exe v1.18.4
-
+$ C:\solana-install-tmp\solana-install-init.exe v1.18.4 
 - exit terminal when done
 - open new terminal
-- check the version
-
+- check the version  
 $ solana --version
 
 
-4. Install Ore-CLI
--open a admin terminal and run  
+3. Install Ore-CLI ----------------------------------------------------------------------------------------------------------------
+
+- open a admin terminal and run  
 $ cargo install ore-cli
 
 
-5.  Create And Back Up Wallet
--create the wallet  
+4. Create And Back Up Wallet ------------------------------------------------------------------------------------------------------
+
+- create the wallet  
 $ solana-keygen new
 
 - save the Recovery phrase and password
-- goto your keypair folder it told you "C:\"
+- goto your keypair folder it told you "C:\Users\"keypair location"\.config\solana\id.json"
 - open and copy the id.json
 
 
-6. Top Up Wallet
+5. Top Up Wallet-----------------------------------------------------------------------------------------------------------------
+
 - get your address  
 $ Solana address
 
 - send 0.01-0.02 SOL here
 
 
-7. Get Your RPC
+6. Get Your RPC-----------------------------------------------------------------------------------------------------------------
+
 - goto the RPC link and create a account
 - copy your free rpc api 
 - OR pay for you basic tier about 14-20$ 
 
 
-9. Start Mining Ore
+7. Start Mining Ore-------------------------------------------------------------------------------------------------------------
+
 - create a text file and enter this
 
 @echo off
@@ -92,7 +96,8 @@ goto loop
 - right click the file "run as admin"
 
 
-#Helpful Commands
+#Helpful Commands---------------------------------------------------------------------------------------------------------------
+
 Check ORE Rewards"unclaimed":  
 $ ore rewards
 
@@ -100,7 +105,7 @@ Check ORE Balance"claimed":
 $ ore balance
 
 Claim ORE Rewards:  
-$ ore --rpc --keypair --priority-fee 7000000 claim
+$ ore --rpc "your free or paid RPC" --keypair C:\Users\"keypair location"\.config\solana\id.json --priority-fee 7000000 claim
 
 Check SOL Balance:   
 $ solana balance
