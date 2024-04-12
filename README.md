@@ -9,9 +9,13 @@ Mining $Ore on Windows CLI
 5. Free RPC "Paid preferred" 
 
 #Links
+
 RPC "free & Paid": https://account.getblock.io/sign-in?ref=MDdiZTU0OGMtODg0MC01Y2JjLWI3ZDMtMTU3YzRhYzQyNTY2
+
 RustUp: https://rustup.rs/
+
 SolanaCLI: https://docs.solanalabs.com/cli/install
+
 Ore Website: https://ore.supply/
 
 #Start Building
