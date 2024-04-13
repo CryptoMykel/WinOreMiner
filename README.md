@@ -1,8 +1,15 @@
-# WinOreMiner
-Mining Ore on Windows CLI
+# Mining Ore on Windows 10/11 Unsing CLI
 
 
-#Things You Need
+ All credits to @HardfHatChad for building Ore and the Ore-CLI
+ 
+ Learn more about the Ore Project and HardHatChad
+- https://ore.supply/
+- https://twitter.com/OreSupply
+- https://twitter.com/HardhatChad
+- https://github.com/HardhatChad
+
+# Things You Need
 1. Ore CLI Miner
 2. Rustup/Cargo
 3. Solana CLI wallet
@@ -10,7 +17,7 @@ Mining Ore on Windows CLI
 5. Free RPC "Paid preferred" 
 
 
-#Links
+# Links
 
 RPC "free & Paid": https://account.getblock.io/sign-in?ref=MDdiZTU0OGMtODg0MC01Y2JjLWI3ZDMtMTU3YzRhYzQyNTY2
 
@@ -18,12 +25,12 @@ RustUp: https://rustup.rs/
 
 SolanaCLI: https://docs.solanalabs.com/cli/install
 
-Ore Website: https://ore.supply/
+Ore Website: https://ore.supply/downloads
 
 
-#Start Building
+# Start Building
 
-1. Install RustUp -------------------------------------------------------------------------------------------------------------------
+# 1. Install RustUp 
 
 - goto the RustUp webiste and download
 - click/run the exe as admin
@@ -31,7 +38,7 @@ Ore Website: https://ore.supply/
 - exit terminal when done
 
 
-2. Install Solana CLI ---------------------------------------------------------------------------------------------------------------
+# 2. Install Solana CLI 
  
 - open admin terminal
 - goto the Solana Docs page in the links
@@ -44,13 +51,13 @@ $ C:\solana-install-tmp\solana-install-init.exe v1.18.4
 $ solana --version
 
 
-3. Install Ore-CLI ----------------------------------------------------------------------------------------------------------------
+# 3. Install Ore-CLI 
 
 - open a admin terminal and run  
 $ cargo install ore-cli
 
 
-4. Create And Back Up Wallet ------------------------------------------------------------------------------------------------------
+# 4. Create And Back Up Wallet 
 
 - create the wallet  
 $ solana-keygen new
@@ -60,7 +67,7 @@ $ solana-keygen new
 - open and copy the id.json
 
 
-5. Top Up Wallet-----------------------------------------------------------------------------------------------------------------
+# 5. Top Up Wallet
 
 - get your address  
 $ Solana address
@@ -68,14 +75,14 @@ $ Solana address
 - send 0.01-0.02 SOL here
 
 
-6. Get Your RPC-----------------------------------------------------------------------------------------------------------------
+# 6. Get Your RPC
 
 - goto the RPC link and create a account
 - copy your free rpc api 
 - OR pay for you basic tier about 14-20$ 
 
 
-7. Start Mining Ore-------------------------------------------------------------------------------------------------------------
+# 7. Start Mining Ore
 
 - create a text file and enter this
 
@@ -96,7 +103,7 @@ $ Solana address
 - right click the file "run as admin"
 
 
-#Helpful Commands---------------------------------------------------------------------------------------------------------------
+# Helpful Commands
 
 Check ORE Rewards"unclaimed":  
 $ ore --keypair C:\Users\ "keypair location"\.config\solana\id.json rewards
