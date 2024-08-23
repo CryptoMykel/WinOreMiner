@@ -92,7 +92,7 @@ $ Solana address
   
   echo start mining ore...
   
-  ore --rpc "your free or paid RPC" --keypair C:\Users\ "keypair location"\.config\solana\id.json --priority-fee 8000000 mine --threads " your PC thread count"
+  ore --rpc "your free or paid RPC" --keypair C:\Users\ "keypair location"\.config\solana\id.json --priority-fee 8000000 mine --cores " your PC core count"
   
   goto loop
 
